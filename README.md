@@ -18,26 +18,26 @@ task_api/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
+<!--
 ➕ Create a task
-<!-- # i create new task with this code below(Create more tasks via POST):
+ # i create new task with this code below(Create more tasks via POST):
 Invoke-RestMethod `
 -Uri http://127.0.0.1:5000/tasks `
 -Method POST `
 -ContentType "application/json" `
 -Body '{"title":"My third API task"}'
- -->
+ 
 📖 Read tasks
-<!-- 
+
 Invoke-RestMethod -Uri http://127.0.0.1:5000/tasks -Method GET
- -->
+ 
 ✏️ Update a task
-<!-- 2️⃣ Update tasks via PUT:
+ 2️⃣ Update tasks via PUT:
 Invoke-RestMethod -Uri http://127.0.0.1:5000/tasks/1 -Method PUT -ContentType "application/json" -Body '{"completed":1}'
 
- -->
+ 
 ❌ Delete a task
-<!-- Delete tasks via DELETE:
+Delete tasks via DELETE:
 Invoke-RestMethod -Uri http://127.0.0.1:5000/tasks/1 -Method DELETE
 
  -->
